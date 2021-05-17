@@ -51,24 +51,25 @@ function makeAddress(selectedRestaurant) {
 }
 function determineStarRating(selectedRestaurant) {
     let starCount = 0;
+    const starContainer = document.getElementById('put-stars-here');
+    starContainer.innerHTML = '';
     for (j=0; j <= selectedRestaurant.rating; j++) {
-        createStar('stars__active');
+        createStar('stars__active', starContainer);
         starCount++;
     }
     let diffBetweenStars = 5 - starCount;
     if (diffBetweenStars > 0) {
         for (let k=0; k < diffBetweenStars; k++) {
-            createStar('stars');
+            createStar('stars', starContainer);
         }
     }
 }
 
-function createStar(classToAdd) {
+function createStar(classToAdd, elementToAppendTo) {
     let newStarSpan = document.createElement("span");
     newStarSpan.innerHTML = '★';
     newStarSpan.classList.add(classToAdd);
-    const starContainer = document.getElementById('put-stars-here');
-    starContainer.appendChild(newStarSpan);
+    elementToAppendTo.appendChild(newStarSpan);
 }
 
 function letThemKnow(selectedRestaurant){
