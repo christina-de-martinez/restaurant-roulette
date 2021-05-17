@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v17/0QI6MX1D_JOuGQbT0gvTJPa787weuyJG.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+  }
+  * {
+    margin: 0;
+  }
+  .flex-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .flex-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fill-screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2F3E46;
+  }
+  .fill-screen p {
+    margin-top: 4px;
+  }
+  .fill-screen form {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .fill-screen #start-hidden {
+    opacity: 0;
+    max-width: 400px;
+    min-height: 550px;
+  }
+  .fill-screen #start-hidden h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  .fill-screen #start-hidden p {
+    text-align: left;
+    max-width: 400px;
+    margin-top: 0;
+  }
+  .fill-screen #start-hidden .stars-container .stars,
+  .fill-screen #start-hidden .stars-container .stars__active {
+    font-size: 24px;
+    color: #354F52;
+  }
+  .fill-screen #start-hidden .stars-container .stars__active {
+    color: #84A98C;
+  }
+  h1 {
+    margin-bottom: 0;
+    color: #CAD2C5;
+    font-family: 'Lora', serif;
+  }
+  p {
+    text-align: center;
+    line-height: 1.5;
+    color: #CAD2C5;
+    font-family: 'Poppins', sans-serif;
+  }
+  input,
+  button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+  }
+  button {
+    background-color: #84A98C;
+  }
+  button:hover {
+    background-color: #52796F;
+  }
+  

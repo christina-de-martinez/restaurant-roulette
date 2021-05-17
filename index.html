@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="./styles.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./scripts.js"></script>
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<body>
+<div class="container flex-col flex-center fill-screen">
+    <h1>Can't Decide</h1>
+    <p>Can't decide what to eat?<br/>Type your U.S. zip code in the box and I'll decide for you.</p>
+    <form action="#" onsubmit="handleSubmit();return false">
+        <input type="text" placeholder="98225" id="zipcode-input" />
+        <button type="submit">Decide</button>
+    </form>
+    <div id="start-hidden">
+        <h1 id="output-name">Name</h1>
+        <p id="output-address">Address</p>
+        <div class="stars-container flex-row" id="put-stars-here"></div>
+    </div>
+</div>
+
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+>
+</script>
+</body>
