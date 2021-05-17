@@ -1,6 +1,8 @@
 # restaurant-roulette
 * next up
 make sure the restaurant in question open. if not choose a new restaurant
+cors?
+monetization or coffee link
 
 * tentpole features
 add support for text string locations
@@ -24,4 +26,3 @@ filter out chain restaurants
 * to do later
 rebuild using react
 host off of github pages
-monetization or coffee link
