@@ -50,8 +50,6 @@ function makeAddress(selectedRestaurant) {
     return restaurantLocationString;
 }
 function determineStarRating(selectedRestaurant) {
-    console.log(selectedRestaurant);
-    console.log(selectedRestaurant.rating);
     let starCount = 0;
     for (j=0; j <= selectedRestaurant.rating; j++) {
         createStar('stars__active');
@@ -59,7 +57,6 @@ function determineStarRating(selectedRestaurant) {
     }
     let diffBetweenStars = 5 - starCount;
     if (diffBetweenStars > 0) {
-        console.log('difference is' + diffBetweenStars);
         for (let k=0; k < diffBetweenStars; k++) {
             createStar('stars');
         }
